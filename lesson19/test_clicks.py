@@ -51,5 +51,3 @@ def test_fill_form(driver):
     assert reading.is_selected()
     assert city.is_displayed()
     assert not city.is_enabled()
-
-
