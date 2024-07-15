@@ -1,0 +1,2 @@
+from diplom_wildberries.pages.base_page import BasePage
+from diplom_wildberries.pages.main_page import MainPage

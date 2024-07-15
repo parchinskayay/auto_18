@@ -1,0 +1,1 @@
+from diplom_wildberries.helpers.urls import BASE_URL
