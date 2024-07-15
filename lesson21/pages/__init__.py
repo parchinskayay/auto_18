@@ -1,0 +1,3 @@
+from lesson21.pages.base_page import BasePage
+from lesson21.pages.trudoustroystvo_page import TrudoustroystvoPage
+from lesson21.pages.demo_web_shop_page import DemoWebShopPage

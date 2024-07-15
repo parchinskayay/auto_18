@@ -1,7 +1,7 @@
-from lesson21.base_page import BasePage
+from lesson21.pages import BasePage
 from selenium.webdriver.common.by import By
 
-from lesson21.urls import BASE_PATH
+from lesson21.helpers import BASE_PATH
 
 
 class TrudoustroystvoPage(BasePage):
@@ -15,7 +15,7 @@ class TrudoustroystvoPage(BasePage):
         self.driver.get(BASE_PATH + 'services/trudoustroystvo')
 
     def assert_elements_visible(self):
-        assert self.driver.find_element(By.CSS_SELECTOR, self.EMPLOYMENT_INTRO)
-        assert self.driver.find_element(By.CSS_SELECTOR, self.STORAGE_TAG)
+        self.assertions.assert_that_element_is_visible(self.EMPLOYMENT_INTRO)
+        self.assertions.assert_that_element_is_visible(self.STORAGE_TAG)
 
         self.save_screenshot('assert_elements_visible.png')
