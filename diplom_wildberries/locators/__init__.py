@@ -1,0 +1,1 @@
+from diplom_wildberries.locators.favorites_locators import FavouritesLocators
