@@ -29,3 +29,7 @@ class BasePage:
 
     def save_screenshot(self, name):
         self.driver.save_screenshot(name)
+
+    def get_text(self, selector):
+        element = self.driver.find_element(*selector)
+        return element.text
